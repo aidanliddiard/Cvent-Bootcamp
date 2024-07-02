@@ -60,7 +60,7 @@ public class Vehicle extends Asset {
                 break;
         }
         if (odometer > 100000 && !makeModel.contains("Honda") && !makeModel.contains("Toyota") ) {
-            value *= -.25;
+            value = value * .75;
         }
         return value;
     }

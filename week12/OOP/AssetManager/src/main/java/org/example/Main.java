@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList <Asset> assets = new ArrayList<>();
-            assets.add(new Vehicle("my car", "2022", 7500, "Toyota Matrix", 4, 235000));
+            assets.add(new Vehicle("my car", "2022", 7500, "Matrix", 4, 235000));
             assets.add(new House("parent's house", "1998", 300000, "890 SW funny road", 2, 2000, 5000));
             assets.add(new House("lake house", "2018", 450000, "lake st", 4, 1500, 7000));
 

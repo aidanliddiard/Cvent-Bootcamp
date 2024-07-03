@@ -1,0 +1,33 @@
+POP QUIZ
+
+Define an interface in Java. What are its key characteristics?
+    A reusable template - like a blueprint method, mix and match / pick and choose. Bodiless methods. Contracts. Not part of inheritance
+
+How does an abstract class differ from an interface in Java? When might you use one over the other?
+    Abstract classes have to be inherited and interfaces are optional. Classes can only have one parent class and there can be multiple interfaces.
+    Use abstract class when you want want reusable code
+
+Explain the concept of polymorphism in Java.
+    Having parent and children classes and interfaces, downcasting, is a relationships.
+
+What is method overriding, and why is it useful in Java?
+    Overriding is when you have a method that you can rewrite and make more specific
+
+List and briefly describe the four pillars of Object-Oriented Programming (OOP).
+    Abstraction - ability to define a template
+    Inheritance - the act of using abstraction
+    Polymorphism - see above
+    Encapsulation - confine what is seen or hide
+
+What is inheritance in Java, and how does it promote code reuse?
+    You can create parent classes that you can reuse in child classes. Sharable fields.
+
+Provide an example of a class that implements an interface.
+    Flyable
+
+What is the difference between method overloading and method overriding?
+    Overloading is setting up methods to take different number/type of parameters and overriding is changing the parent class implementation
+
+Explain the use of the super keyword in Java. Provide an example.
+    Super is used to access parent class
+    EX. super(color, numberOfPassengers, cargoCapacity, fuelCapacity, averageMpg, electric);

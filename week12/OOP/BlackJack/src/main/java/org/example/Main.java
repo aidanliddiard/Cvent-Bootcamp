@@ -22,9 +22,9 @@ public class Main {
         for (Player player : players) {
             for (int i = 0; i < 2; i ++) {
                 Card card = deck.deal();
-                Hand hand = new Hand();
-                hand.deal(card);
-                player.setPlayerHand(hand);
+//                Hand hand = new Hand();
+//                hand.deal(card);
+                player.setPlayerHand(card);
                 int handValue = player.getPlayerHand().getValue();
                 System.out.println("This hand is worth " + handValue);
             }

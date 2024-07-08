@@ -1,6 +1,4 @@
-package org.example.Tuesday;
-
-import org.example.Tuesday.Person;
+package org.example.Week12.Tuesday;
 
 public class Main {
     public static void main(String[] args) {

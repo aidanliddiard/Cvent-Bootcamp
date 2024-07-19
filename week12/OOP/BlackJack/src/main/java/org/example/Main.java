@@ -1,19 +1,35 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        ArrayList<Player> players = new ArrayList<>();
+
+        System.out.println("Please enter name for player 1: ");
+        players.add(new Player(scanner.nextLine()));
+
+        System.out.println("Please enter name for player 2: ");
+        players.add(new Player(scanner.nextLine()));
+
         Deck deck = new Deck();
         deck.shuffle();
-        Hand hand1 = new Hand();
-        // deal 5 cards
-        for(int i = 0; i < 5; i++) {
-        // get a card from the deck
-            Card card = deck.deal();
 
-        // deal that card to the hand
-            hand1.deal(card);
+        for (Player player : players) {
+            for (int i = 0; i < 2; i ++) {
+                Card card = deck.deal();
+//                Hand hand = new Hand();
+//                hand.deal(card);
+                player.setPlayerHand(card);
+                int handValue = player.getPlayerHand().getValue();
+                System.out.println("This hand is worth " + handValue);
+            }
         }
-        int handValue = hand1.getValue();
-        System.out.println("This hand is worth " + handValue);
+
+
     }
 }

@@ -1,2 +1,5 @@
-package org.example;public class Vehicle {
+package org.example;
+
+public class Vehicle {
+
 }

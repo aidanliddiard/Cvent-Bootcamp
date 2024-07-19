@@ -3,8 +3,10 @@ import java.util.ArrayList;
 
 public class Hand {
     private ArrayList<Card> cards;
+    private boolean bust;
     public Hand(){
         cards = new ArrayList<>();
+        this.bust = false;
     }
     public void deal(Card card){
         cards.add(card);
@@ -20,5 +22,9 @@ public class Hand {
             card.flip();
         }
         return value;
+    }
+
+    public void checkBust() {
+//        if ()
     }
 }

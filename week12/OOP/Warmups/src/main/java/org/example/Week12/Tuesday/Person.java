@@ -1,4 +1,4 @@
-package org.example.Tuesday;
+package org.example.Week12.Tuesday;
 
 public class Person {
     private String name;

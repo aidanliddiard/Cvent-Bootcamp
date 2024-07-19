@@ -3,22 +3,20 @@ package org.example;
 public class Player {
     private Hand playerHand;
     private String name;
-    private int handTotal;
-    boolean bust;
 
-    public Player(Hand playerHand, String name) {
-        this.playerHand = playerHand;
+//    private boolean dealer;
+
+    public Player(String name) {
+        this.playerHand = new Hand();
         this.name = name;
-        this.handTotal = 0;
-        this.bust = false;
     }
 
     public Hand getPlayerHand() {
         return playerHand;
     }
 
-    public void setPlayerHand(Hand playerHand) {
-        this.playerHand = playerHand;
+    public void setPlayerHand(Card card) {
+        playerHand.deal(card);
     }
 
     public String getName() {
@@ -29,19 +27,6 @@ public class Player {
         this.name = name;
     }
 
-    public int getHandTotal() {
-        return playerHand.getValue();
-    }
+//    public Hand addCard()
 
-    public void setHandTotal(int handTotal) {
-        this.handTotal = handTotal;
-    }
-
-    public boolean isBust() {
-        return bust;
-    }
-
-    public void setBust(boolean bust) {
-        this.bust = bust;
-    }
 }

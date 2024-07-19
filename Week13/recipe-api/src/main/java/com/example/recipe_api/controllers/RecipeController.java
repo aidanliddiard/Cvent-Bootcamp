@@ -49,7 +49,7 @@ public class RecipeController {
         return new ResponseEntity<>(recipe, HttpStatus.CREATED);
     }
 
-    @PutMapping()
+    @PutMapping("/{id}")
     public ResponseEntity<RecipeDTO> updateRecipe(@Valid @RequestBody UpdateRecipeDTO dto,
                                                   @PathVariable Long id){
         var recipe = recipeService.updateRecipe(dto, id);
